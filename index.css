@@ -5,6 +5,12 @@ body {
   padding: 0;
 }
 
+.wrapper {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
 /* General Navbar Styles */
 .navbar {
   width: 100%;
@@ -12,21 +18,19 @@ body {
   border-bottom: 2px solid #e2e8f0; /* Assuming you want a light border */
 }
 
-/* Navbar Container Styles */
 .navbar-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px; /* Adjust based on your container width */
   margin: 0 auto;
-  width: 100%;
+  width: 90%;
+  padding: 10px 0;
 }
 
-/* Logo Styles */
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.25rem; /* Equivalent to gap-1 in Tailwind */
+  gap: 0.25rem;
   text-decoration: none;
 }
 
@@ -35,26 +39,23 @@ body {
   font-size: 1.25rem; /* Equivalent to text-xl */
 }
 
-/* Actions Styles */
 .actions {
   display: flex;
   align-items: center;
-  gap: 1.25rem; /* Equivalent to gap-5 in Tailwind */
+  gap: 1.25rem;
 }
 
 .actions img {
   cursor: pointer;
 }
 
-/* Button Styles */
 .login-button,
 .signup-button {
   border: 2px solid #334155;
-  padding: 0.5rem 0.75rem; /* Equivalent to px-3 py-2 in Tailwind */
+  padding: 0.5rem 0.75rem;
   text-align: center;
   cursor: pointer;
   background: #fff;
-  border-radius: 5px;
 }
 
 .signup-button {
@@ -62,29 +63,29 @@ body {
   color: #ffffff;
 }
 
-/* Section Styles */
 .hero-section {
   height: 90vh;
+  min-height: 700px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  max-width: 1200px; /* Adjust based on your container width */
+  gap: 20px;
+  padding-top: 20px;
 }
 
-/* Text Content Styles */
-.text-content {
+.hero-section .text-content {
   height: 100%;
-  width: 40%; /* Equivalent to w-2/5 in Tailwind */
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1.25rem; /* Equivalent to gap-5 in Tailwind */
 }
 
 .headline1 {
-  font-size: 3rem; /* Equivalent to text-5xl in Tailwind */
-  font-weight: bold; /* Equivalent to font-bold in Tailwind */
+  font-size: 3rem;
+  font-weight: bold;
+  color: #0f172a;
 }
 
 .cta-button1 {
@@ -100,7 +101,7 @@ body {
 /* Image Content Styles */
 .image-content {
   height: 100%;
-  width: 60%; /* Equivalent to w-3/5 in Tailwind */
+  width: 50%; /* Equivalent to w-3/5 in Tailwind */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,18 +116,16 @@ body {
 /* Outer Section Styles */
 .stats-section {
   margin-top: 2.5rem; /* Equivalent to my-10 in Tailwind */
-  background-color: #f8fafc; /* Equivalent to bg-[#F8FAFC] in Tailwind */
+  background-color: #f8fafc;
 }
 
 /* Container Styles */
 .stats-container {
-  min-height: fit-content;
-  padding: 2.5rem; /* Equivalent to p-10 in Tailwind */
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  max-width: 1200px; /* Adjust based on your container width */
-  margin: 0 auto;
+  padding: 20px;
+  gap: 10px;
 }
 
 /* Individual Stat Item Styles */
@@ -144,7 +143,8 @@ body {
 }
 
 .stat-description {
-  font-size: 1.25rem; /* Equivalent to text-xl in Tailwind */
+  font-size: 1.25rem;
+  padding-top: 10px; /* Equivalent to text-xl in Tailwind */
 }
 
 /* Divider Styles */
@@ -161,21 +161,34 @@ body {
   padding-bottom: 1.25rem; /* Equivalent to py-5 in Tailwind */
 }
 
+.title-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-section a {
+  text-decoration: underline;
+  font-size: 20px;
+  color: #0099ff;
+}
+
 /* Container Styles */
 .top-categories-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 2.5rem; /* Equivalent to gap-10 in Tailwind */
-  max-width: 1200px; /* Adjust based on your container width */
-  margin: 0 auto;
+  gap: 2.5rem;
+  margin-top: 50px;
 }
 
 /* Title Styles */
 .section-title {
   font-size: 1.875rem; /* Equivalent to text-3xl in Tailwind */
-  font-weight: 500; /* Equivalent to font-medium in Tailwind */
+  font-weight: 600;
+  color: #0F172A; /* Equivalent to font-medium in Tailwind */
 }
 
 .courses-list,
@@ -185,7 +198,8 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  gap: 1.25rem; /* Equivalent to gap-5 in Tailwind */
+  gap: 1.25rem;
+  gap: 10px;
 }
 
 /* Category Item Styles */
@@ -209,8 +223,8 @@ body {
   width: 4rem; /* Adjust as needed for size-16 equivalent */
   height: 4rem; /* Adjust as needed for size-16 equivalent */
   background-color: #e0f2fe; /* Equivalent to bg-[#E0F2FE] in Tailwind */
-  border-radius: 9999px; /* Equivalent to rounded-full in Tailwind */
-  padding: 0.75rem; /* Equivalent to p-3 in Tailwind */
+  border-radius: 100%; /* Equivalent to rounded-full in Tailwind */
+  padding: 25px; /* Equivalent to p-3 in Tailwind */
   margin-bottom: 0.75rem; /* Equivalent to m-3 in Tailwind */
 }
 
@@ -227,7 +241,7 @@ body {
 
 /* Category Count Styles */
 .category-count {
-  color: #4b5563; /* Equivalent to text-gray-600 in Tailwind */
+  color: #0f172a; /* Equivalent to text-gray-600 in Tailwind */
   font-weight: 500; /* Equivalent to font-medium in Tailwind */
 }
 
@@ -245,9 +259,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 2.5rem; /* Equivalent to gap-10 in Tailwind */
-  max-width: 1200px; /* Adjust based on your container width */
-  margin: 0 auto;
+  gap: 2.5rem;
 }
 
 /* Title Styles */
@@ -342,6 +354,7 @@ body {
   border-top: 2px solid #e2e8f0; /* Border color */
   padding: 0.5rem;
   width: 90%;
+  gap: 10;
   margin-top: 5px; /* Equivalent to p-4 in Tailwind */
 }
 
@@ -380,13 +393,17 @@ body {
 .nav-button {
   padding: 0.5rem; /* Equivalent to px-2 in Tailwind */
   background-color: #94a3b8; /* Background color */
-  border-radius: 0.75rem; /* Equivalent to rounded-lg in Tailwind */
+  border-radius: 8px; /* Equivalent to rounded-lg in Tailwind */
 }
 
 .nav-icon {
   width: 1.25rem; /* Equivalent to size-10 in Tailwind */
   height: 1.25rem; /* Equivalent to size-10 in Tailwind */
   object-fit: contain;
+}
+
+.right {
+  rotate: 180deg;
 }
 
 /* Testimonials Container Styles */
@@ -406,7 +423,7 @@ body {
   min-width: 25rem; /* Equivalent to min-w-[400px] in Tailwind */
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 10;
   margin: 5px; /* Equivalent to space-y-5 in Tailwind */
 }
 
@@ -449,7 +466,7 @@ body {
 /* Become an Instructor Section */
 .instructor-content {
   display: flex;
-  gap: 2.5rem;
+  gap: 10px;
   align-items: center;
   justify-content: center;
 }
@@ -491,7 +508,7 @@ body {
   border-radius: 0.75rem; /* Equivalent to rounded-lg in Tailwind */
   color: #ffffff; /* Text color */
   gap: 0.75rem;
-  width: fit-content;/* Equivalent to gap-3 in Tailwind */
+  width: fit-content; /* Equivalent to gap-3 in Tailwind */
 }
 
 .cta-icon {
@@ -523,6 +540,13 @@ body {
 
 .image-container {
   flex: 1;
+}
+
+.image-container:last-child {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .instructor-image {
@@ -575,6 +599,7 @@ body {
 .footer-content {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 50px;
 }
 
 .footer-logo {
@@ -613,6 +638,7 @@ body {
 .footer-item {
   cursor: pointer;
   transition: color 0.3s ease;
+  margin-bottom: 10px;
 }
 
 .footer-item:hover {
